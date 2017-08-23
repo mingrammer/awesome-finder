@@ -1,0 +1,6 @@
+# Compiled source
+__pycache__/
+*.pyc
+
+# Idea IDE
+.idea/
