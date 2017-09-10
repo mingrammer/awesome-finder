@@ -2,5 +2,15 @@
 __pycache__/
 *.pyc
 
-# Idea IDE
+# IDE and Editor
 .idea/
+.vscode/
+
+# Build and Packages
+awesome_finder.egg-info
+dist/
+build/
+
+# Trash
+.DS_Store
+
