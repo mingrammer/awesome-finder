@@ -29,6 +29,8 @@ def save_readme(awesome_title, readme):
     """
     awesome_cache_directory = os.path.join(CACHE_DIRECTORY, awesome_title)
     awesome_cached_readme = os.path.join(awesome_cache_directory, 'README.md')
+    if not os.path.exists(CACHE_DIRECTORY):
+        os.mkdir(CACHE_DIRECTORY)
     if not os.path.exists(awesome_cache_directory):
         os.mkdir(awesome_cache_directory)
     with open(awesome_cached_readme, 'w+', encoding='utf8') as readme_md:

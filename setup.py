@@ -6,7 +6,6 @@ from shutil import rmtree
 from setuptools import setup, find_packages, Command
 
 import awesome
-from awesome.cache import CACHE_DIRECTORY
 
 # Package meta-data.
 NAME = 'awesome-finder'
@@ -25,10 +24,6 @@ here = os.path.abspath(os.path.dirname(__file__))
 # Note: this will only work if 'README.rst' is present in your MANIFEST.in file!
 with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = '\n' + f.read()
-
-# Create cache folder to save the README locally
-if not os.path.exists(CACHE_DIRECTORY):
-    os.mkdir(CACHE_DIRECTORY)
 
 
 class PublishCommand(Command):
