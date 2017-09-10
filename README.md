@@ -6,7 +6,7 @@ A TUI based finder for searching the awesome things on awesome series such as `a
 
 With it, you can browse the awesome libraries, resources on your terminal without browser.
 
-![demo](demo.gif)
+[![asciicast](https://asciinema.org/a/OOdH9rLVBvReK3K6n7pZvruf9.png)](https://asciinema.org/a/OOdH9rLVBvReK3K6n7pZvruf9)
 
 <br>
 
