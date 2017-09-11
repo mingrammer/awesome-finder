@@ -1,8 +1,10 @@
 # Awesome finder
 
-> Find the awesome things without browser
+> Find the awesome things without browser.
+>
+> What does mean awesome? The awesome seires provide a curated list of awesome frameworks, libraries, software and resources for a specific topic. An example is [awesome-python](https://github.com/vinta/awesome-python)
 
-A TUI based finder for searching the awesome things on awesome series such as `awesome-python`, `awesome-go` and so on.
+A TUI based finder for searching the awesome resources on awesome series such as `awesome-python`, `awesome-go` and so on.
 
 With it, you can browse the awesome libraries, resources on your terminal without browser.
 
