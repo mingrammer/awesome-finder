@@ -182,7 +182,7 @@ class SearchScreen(object):
     def open_link(self):
         """Open the link of highlighted awesome content"""
         index = self.top + self.current
-        if self.matched_blocks[index]['type'] == 'awesome':
+        if self.matched_blocks and self.matched_blocks[index]['type'] == 'awesome':
             webbrowser.open(self.matched_blocks[index]['link'], new=2)
 
     def search(self, query):
@@ -196,7 +196,7 @@ class SearchScreen(object):
         """
         matched_blocks = []
         if query:
-            query_tokens = query.lower().split()            
+            query_tokens = query.lower().split()
             for block in self.awesome_blocks:
                 if all([token in block['line'].lower() for token in query_tokens]):
                     matched_blocks.append(block)
