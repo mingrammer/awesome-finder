@@ -1,4 +1,4 @@
-[![PyPI version](https://badge.fury.io/py/awesome-finder.svg)](https://badge.fury.io/py/awesome-finder)
+[![PyPI version](https://badge.fury.io/py/awesome-finder.svg)](https://badge.fury.io/py/awesome-finder) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mingrammer/awesome-finder/blob/master/LICENSE)
 
 # Awesome finder
 
