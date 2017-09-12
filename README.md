@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/awesome-finder.svg)](https://badge.fury.io/py/awesome-finder)
+
 # Awesome finder
 
 > Find the awesome things without browser.
