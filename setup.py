@@ -9,7 +9,7 @@ import awesome
 
 # Package meta-data.
 NAME = 'awesome-finder'
-DESCRIPTION = 'A TUI based awesome finder'
+DESCRIPTION = 'A TUI based awesome curated list finder'
 URL = 'https://github.com/mingrammer/awesome-finder'
 EMAIL = 'k239507@gmail.com'
 
@@ -86,6 +86,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
+        'Topic :: Terminals',
+
     ],
     # $ setup.py publish support.
     cmdclass={
