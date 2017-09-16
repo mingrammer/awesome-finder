@@ -55,8 +55,10 @@ There are some helper keys:
 These will be updated continuously
 
 - awesome
+- awesome-android
 - awesome-elixir
 - awesome-go
+- awesome-ios
 - awesome-java
 - awesome-javascript
 - awesome-php
