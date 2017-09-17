@@ -4,7 +4,7 @@ If you want to add other awesome repositories, you must implement the README par
 
 <br>
 
-## How works?
+## How it works?
 
 1. Make a parser for a specific awesome repository to `awesome/parsers/`
 2. Register this parser to `awesome/parser_loader.py`
