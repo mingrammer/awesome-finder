@@ -30,7 +30,7 @@ class AbstractAwesomeParser(object):
             force_request: If true, the parser does not use cached, but always request the README from remote repository
         """
         self._markdown_header_regex = re.compile('#+\s+(.*)')
-        self._markdown_link_line_regex = re.compile('\s?\[([^\[\]<>]+)\]\s?\(([^\(\)]+)\)(?: [-—] (.*))?')
+        self._markdown_link_line_regex = re.compile('\s?\[([^<>]+|(?:\[\w+\]))\]\s?\(([^\(\)]+)\)\s?(?::\w+:)?\s?(?:[-—]\s?(.*))?')
         self.force_request = force_request
 
     def is_cached(self):
