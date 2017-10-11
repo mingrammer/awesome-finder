@@ -2,12 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.1) - 2017-10-12
+
+### Added
+
+- Add `--version` option
+
 ## [1.1.0](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.0) - 2017-10-12
 
 ### Added
 
 * Create CHANGELOG.md
-* Add `--version` option
 * Add `requirements.txt`
 
 ### Changed
