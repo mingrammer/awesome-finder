@@ -28,13 +28,13 @@ pip install awesome-finder # or pip3 install awesome-finder
 
 ```bash
 # Find awesome things from awesome-<topic>
-awesome <topic>
+awesome-hub <topic>
 
 # Find awesome things from latest awesome-<topic> (not use cache)
-awesome <topic> -f (--force)
+awesome-hub <topic> -f (--force)
 
 # Show help messages (can see supported awesome topics)
-awesome -h (--help)
+awesome-hub -h (--help)
 ```
 
 There are some helper keys:
@@ -73,6 +73,12 @@ These will be updated continuously
 ## Contributing
 
 Details on [CONTRIBUTING](CONTRIBUTING.md)
+
+<br>
+
+## Changelog
+
+Details on [CHANGELOG](CHANGELOG.md)
 
 <br>
 

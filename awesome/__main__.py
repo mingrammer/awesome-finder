@@ -3,6 +3,7 @@
 import argparse
 import os
 
+from . import __author__, __version__
 from .parser_loader import load_parsers
 from .tui import SearchScreen
 
@@ -22,6 +23,8 @@ def get_awesome_blocks(awesome_title, force):
 
 def parse_command():
     parser = argparse.ArgumentParser(description='awesome command')
+
+    parser.add_argument('--version', action='version', version='awesome-finder version {version}, (c) 2017-2017 by {author}.'.format(version=__version__, author=__author__))
 
     subparsers = parser.add_subparsers(dest='title', title='title',
                                        description='The title of awesome you want to find')

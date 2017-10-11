@@ -70,7 +70,7 @@ setup(
     keywords='awesome finder curses tui',
     packages=find_packages(),
     entry_points={
-        'console_scripts': ['awesome=awesome.__main__:main'],
+        'console_scripts': ['awesome-hub=awesome.__main__:main'],
     },
     install_requires=REQUIRED,
     include_package_data=True,

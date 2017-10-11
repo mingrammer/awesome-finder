@@ -1,6 +1,6 @@
 """
-awesome - a TUI, for finding awesome list
+awesome-hub - a TUI, for finding curated awesome list
 """
-__version__ = '1.0.6'
+__version__ = '1.1.0'
 __author__ = 'mingrammer'
 __license__ = 'MIT'
