@@ -10,6 +10,7 @@ from .parsers.python import AwesomePythonParser
 from .parsers.ruby import AwesomeRubyParser
 from .parsers.rust import AwesomeRustParser
 from .parsers.scala import AwesomeScalaParser
+from .parsers.shell import AwesomeShellParser
 from .parsers.swift import AwesomeSwiftParser
 
 
@@ -27,5 +28,6 @@ def load_parsers():
         'ruby': AwesomeRubyParser,
         'rust': AwesomeRustParser,
         'scala': AwesomeScalaParser,
+        'shell': AwesomeShellParser,
         'swift': AwesomeSwiftParser,
     }
