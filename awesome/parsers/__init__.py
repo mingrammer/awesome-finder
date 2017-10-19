@@ -42,7 +42,7 @@ class AbstractAwesomeParser(object):
         return load_readme(self.AWESOME_TITLE)
 
     def cache(self, readme):
-        # Cache the readme to cache directory
+        """Cache the readme to cache directory"""
         save_readme(self.AWESOME_TITLE, readme)
 
     def read_readme(self):
