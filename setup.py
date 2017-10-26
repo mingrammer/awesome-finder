@@ -7,6 +7,8 @@ from setuptools import setup, find_packages, Command
 
 import awesome
 
+HERE = os.path.abspath(os.path.dirname(__file__))
+
 # Package meta-data.
 NAME = 'awesome-finder'
 DESCRIPTION = 'A TUI based awesome curated list finder'
@@ -14,15 +16,17 @@ URL = 'https://github.com/mingrammer/awesome-finder'
 EMAIL = 'k239507@gmail.com'
 
 # What packages are required for this module to be executed?
-REQUIRED = [
-    'requests'
-]
-
-here = os.path.abspath(os.path.dirname(__file__))
+REQUIRED = []
+with io.open(os.path.join(HERE, 'requirements.txt'), encoding='utf-8') as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        REQUIRED.append(line)
 
 # Import the README and use it as the long-description.
 # Note: this will only work if 'README.rst' is present in your MANIFEST.in file!
-with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+with io.open(os.path.join(HERE, 'README.md'), encoding='utf-8') as f:
     long_description = '\n' + f.read()
 
 
@@ -46,7 +50,7 @@ class PublishCommand(Command):
     def run(self):
         try:
             self.status('Removing previous builds…')
-            rmtree(os.path.join(here, 'dist'))
+            rmtree(os.path.join(HERE, 'dist'))
         except OSError:
             pass
 
