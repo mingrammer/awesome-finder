@@ -1,9 +1,20 @@
-[![PyPI version](https://badge.fury.io/py/awesome-finder.svg)](https://badge.fury.io/py/awesome-finder) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mingrammer/awesome-finder/blob/master/LICENSE)
+<br><br>
 
-# Awesome finder
+<h1 align="center">Awesome Finder</h1>
 
-> Find the awesome things without browser.
->
+<p align="center">
+  <a href="https://badge.fury.io/py/awesome-finder"><img src="https://badge.fury.io/py/awesome-finder.svg"/></a>
+  <a href="https://docs.python.org/3/index.html"><img src="https://img.shields.io/badge/python-3.5, 3.6-blue.svg"/></a>
+  <a href="https://www.python.org/dev/peps/pep-0008"><img src="https://img.shields.io/badge/code%20style-PEP8-brightgreen.svg"/></a>
+  <a href="/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
+</p>
+
+<p align="center">
+  Find and search the awesome things without browser
+</p>
+
+<br><br><br>
+
 > What does mean awesome? The awesome seires provide a curated list of awesome frameworks, libraries, software and resources for a specific topic. An example is [awesome-python](https://github.com/vinta/awesome-python)
 
 A TUI based finder for searching the awesome resources on awesome series such as `awesome-python`, `awesome-go` and so on.
