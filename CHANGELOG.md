@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.2) - 2018-01-21
+
+### Added
+
+- Add parsers for awesome-nodejs/vue
+
 ## [1.1.1](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.1) - 2017-10-12
 
 ### Added

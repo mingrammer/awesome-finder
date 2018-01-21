@@ -72,12 +72,14 @@ These will be updated continuously
 - awesome-ios
 - awesome-java
 - awesome-javascript
+- awesome-nodejs
 - awesome-php
 - awesome-python
 - awesome-ruby
 - awesome-rust
 - awesome-scala
 - awesome-swift
+- awesome-vue
 
 <br>
 
