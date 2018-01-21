@@ -61,7 +61,7 @@ There are some helper keys:
 
 ## Supported awesome topics
 
->  *Updates: 2017-09-10*
+>  *Updated: 2018-01-21*
 
 These will be updated continuously
 
