@@ -23,22 +23,19 @@ def get_awesome_blocks(awesome_title, force):
 
 def parse_command():
     parser = argparse.ArgumentParser(description='awesome command')
-
     parser.add_argument('--version', action='version', version='awesome-finder version {version}, (c) 2017-2018 by {author}.'.format(version=__version__, author=__author__))
 
-    subparsers = parser.add_subparsers(dest='title', title='title',
-                                       description='The title of awesome you want to find')
+    subparsers = parser.add_subparsers(dest='title', title='title', description='the title of awesome you want to find')
     subparsers.required = True
 
     # Register awesome commands
     for title in awesome_parsers.keys():
         if title == 'awesome':
-            subparsers.add_parser(title, help='Search the {}'.format(title)) \
-                .add_argument('--force', '-f', type=bool, nargs='?', const=True, default=False)
+            subparser = subparsers.add_parser(title, help='search the {}'.format(title))
         else:
-            subparsers.add_parser(title, help='Search the awesome-{}'.format(title)) \
-                .add_argument('--force', '-f', type=bool, nargs='?', const=True, default=False)
-
+            subparser = subparsers.add_parser(title, help='search the awesome-{}'.format(title))
+        subparser.add_argument('--force', '-f', type=bool, nargs='?', const=True, default=False)
+        subparser.add_argument('--query', '-q', type=str, default='', help='pass the initial query')
     return parser.parse_args()
 
 
@@ -47,8 +44,9 @@ def main():
 
     args = parse_command()
     awesome_blocks = get_awesome_blocks(args.title, args.force)
+    initial_query = args.query
 
-    SearchScreen(args.title, awesome_blocks)
+    SearchScreen(args.title, awesome_blocks, initial_query=initial_query)
 
 
 if __name__ == '__main__':

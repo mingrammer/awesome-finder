@@ -13,13 +13,14 @@ class SearchScreen(object):
 
     query = ''
 
-    def __init__(self, awesome_title, awesome_blocks):
+    def __init__(self, awesome_title, awesome_blocks, initial_query=''):
         """ Initialize the screen window
 
         Args
             awesome_title: Awesome topic title
             awesome_blocks: A list of formatted awesome content.
                 It has a set of names and web links for crawled awesome content.
+            initial_query: An optional initial query given from shell
 
         Attributes
             window: A full curses screen window
@@ -66,6 +67,7 @@ class SearchScreen(object):
         self.bottom = self.max_lines
         self.current = 0
 
+        self.write_string(initial_query)
         self.run()
 
     def init_curses(self):
@@ -144,6 +146,11 @@ class SearchScreen(object):
         """Write a character and append it to the query"""
         self.search_window.addch(ch)
         self.query += chr(ch)
+
+    def write_string(self, string):
+        """Write a string"""
+        for ch in string:
+            self.write(ord(ch))
 
     def delete(self):
         """Delete an ending character"""
