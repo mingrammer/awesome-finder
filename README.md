@@ -44,6 +44,9 @@ awesome-hub <topic>
 # Find awesome things from latest awesome-<topic> (not use cache)
 awesome-hub <topic> -f (--force)
 
+# Find awesome things with initial query
+awesome-hub <topic> -q (--query) 'query string you want to search'
+
 # Show help messages (can see supported awesome topics)
 awesome-hub -h (--help)
 ```
