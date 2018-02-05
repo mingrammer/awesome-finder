@@ -101,5 +101,5 @@ Details on [CHANGELOG](CHANGELOG.md)
 * [ ] Supports paging with Key left (←) and Key right (→)
 * [ ] Smart parsing with hierachical structure
 * [ ] Supports all awesome series
-* [ ] Supports initial query (example: `awesome python -q 'django oauth'`)
+* [x] Supports initial query (example: `awesome python -q 'django oauth'`)
 * [ ] Add options to open the Issue and Pull Request page of a specific awesome series

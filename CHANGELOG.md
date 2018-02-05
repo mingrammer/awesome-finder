@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.3) - 2018-02-06
+
+### Added
+
+- Support initial query (-q)
+
 ## [1.1.2](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.2) - 2018-01-21
 
 ### Added
