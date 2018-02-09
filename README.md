@@ -23,8 +23,6 @@ With it, you can browse the awesome libraries, resources on your terminal withou
 
 [![asciicast](https://asciinema.org/a/OOdH9rLVBvReK3K6n7pZvruf9.png)](https://asciinema.org/a/OOdH9rLVBvReK3K6n7pZvruf9)
 
-<br>
-
 ## Installation
 
 It supports **Python 3+** only now.
@@ -32,8 +30,6 @@ It supports **Python 3+** only now.
 ```bash
 pip install awesome-finder # or pip3 install awesome-finder 
 ```
-
-<br>
 
 ## Usage
 
@@ -60,8 +56,6 @@ There are some helper keys:
 | Enter (↵)         | Open the selected awesome link on default browser |
 | Esc               | Close the awesome finder                 |
 
-<br>
-
 ## Supported awesome topics
 
 >  *Updated: 2018-01-21*
@@ -84,19 +78,13 @@ These will be updated continuously
 - awesome-swift
 - awesome-vue
 
-<br>
-
 ## Contributing
 
 Details on [CONTRIBUTING](CONTRIBUTING.md)
 
-<br>
-
 ## Changelog
 
 Details on [CHANGELOG](CHANGELOG.md)
-
-<br>
 
 ## TODO
 
