@@ -95,3 +95,7 @@ Details on [CHANGELOG](CHANGELOG.md)
 * [ ] Supports all awesome series
 * [x] Supports initial query (example: `awesome python -q 'django oauth'`)
 * [ ] Add options to open the Issue and Pull Request page of a specific awesome series
+
+## License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmingrammer%2Fawesome-finder.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmingrammer%2Fawesome-finder?ref=badge_large)
