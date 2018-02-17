@@ -3,10 +3,11 @@
 <h1 align="center">Awesome Finder</h1>
 
 <p align="center">
+  <a href="/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fmingrammer%2Fawesome-finder?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmingrammer%2Fawesome-finder.svg?type=shield"/></a>
   <a href="https://badge.fury.io/py/awesome-finder"><img src="https://badge.fury.io/py/awesome-finder.svg"/></a>
   <a href="https://docs.python.org/3/index.html"><img src="https://img.shields.io/badge/python-3.5, 3.6-blue.svg"/></a>
   <a href="https://www.python.org/dev/peps/pep-0008"><img src="https://img.shields.io/badge/code%20style-PEP8-brightgreen.svg"/></a>
-  <a href="/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
 </p>
 
 <p align="center">
