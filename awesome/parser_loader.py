@@ -1,6 +1,7 @@
 from .parsers.android import AwesomeAndroidParser
 from .parsers.awesome import AwesomeParser
 from .parsers.elixir import AwesomeElixirParser
+from .parsers.erlang import AwesomeErlangParser
 from .parsers.go import AwesomeGoParser
 from .parsers.ios import AwesomeIosParser
 from .parsers.java import AwesomeJavaParser
@@ -21,6 +22,7 @@ def load_parsers():
         'android': AwesomeAndroidParser,
         'awesome': AwesomeParser,
         'elixir': AwesomeElixirParser,
+        'erlang': AwesomeErlangParser,
         'go': AwesomeGoParser,
         'ios': AwesomeIosParser,
         'java': AwesomeJavaParser,
