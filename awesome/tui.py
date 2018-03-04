@@ -171,18 +171,20 @@ class SearchScreen(object):
         """
         next_line = self.current + direction
 
-        # Paging
-        if direction == self.UP and (self.current == 0 and self.top != 0):
-            self.top += self.UP
+        # Up direction scroll overflow
+        if (direction == self.UP) and (self.top > 0 and self.current == 0):
+            self.top += direction
             return
-        if direction == self.DOWN and (next_line == self.max_lines) and (self.top + self.max_lines != self.bottom):
-            self.top += self.DOWN
+        # Down direction scroll overflow
+        if (direction == self.DOWN) and (next_line == self.max_lines) and (self.top + self.max_lines < self.bottom):
+            self.top += direction
             return
-        # Scrolling on result window
-        if direction == self.UP and (self.current != 0 or self.top != 0):
+        # Scroll up
+        if (direction == self.UP) and (self.top > 0 or self.current > 0):
             self.current = next_line
             return
-        if direction == self.DOWN and (self.top + self.current + 1 != self.bottom) and (self.current != self.max_lines):
+        # Scroll down
+        if (direction == self.DOWN) and (next_line < self.max_lines) and (self.top + next_line < self.bottom):
             self.current = next_line
             return
 
