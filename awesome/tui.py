@@ -40,6 +40,7 @@ class SearchScreen(object):
             top: Available top line position for current page (used on scrolling)
             bottom: Available bottom line position for whole pages (as length of found lines)
             current: Current highlighted line number
+            page: Total page count which being changed dynamically corresponding to result of a query
 
             query: Query string for searching the awesome content
 
