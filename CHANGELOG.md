@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.0) - 2018-03-04
+
+### Added
+
+- Support paging with KEY_LEFT/KEY_RIGHT
+- Support awesome-erlang
+
 ## [1.1.3](https://github.com/mingrammer/awesome-finder/releases/tag/v1.1.3) - 2018-02-06
 
 ### Added

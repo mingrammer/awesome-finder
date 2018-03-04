@@ -13,7 +13,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 NAME = 'awesome-finder'
 DESCRIPTION = 'A TUI based awesome curated list finder'
 URL = 'https://github.com/mingrammer/awesome-finder'
-EMAIL = 'mingrammer@@gmail.com'
+EMAIL = 'mingrammer@gmail.com'
 
 # What packages are required for this module to be executed?
 REQUIRED = []
