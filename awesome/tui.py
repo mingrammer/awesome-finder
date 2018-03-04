@@ -114,7 +114,7 @@ class SearchScreen(object):
         self.top = 0
 
     def run(self):
-        """Continue running the awesome finder until interrupted"""
+        """Continue running the awesome finder until get interrupted"""
         try:
             self.input_stream()
         except KeyboardInterrupt:
