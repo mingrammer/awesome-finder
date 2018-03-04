@@ -61,13 +61,14 @@ There are some helper keys:
 
 ## Supported awesome topics
 
->  *Updated: 2018-01-21*
+>  *Updated: 2018-03-04*
 
 These will be updated continuously
 
 - awesome
 - awesome-android
 - awesome-elixir
+- awesome-erlang
 - awesome-go
 - awesome-ios
 - awesome-java
