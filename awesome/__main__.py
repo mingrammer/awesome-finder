@@ -3,9 +3,9 @@
 import argparse
 import os
 
-from . import __author__, __version__
-from .parser_loader import load_parsers
-from .tui import SearchScreen
+from awesome import __author__, __version__
+from awesome.parser_loader import load_parsers
+from awesome.tui import SearchScreen
 
 awesome_parsers = load_parsers()
 
