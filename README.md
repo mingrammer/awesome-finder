@@ -52,8 +52,10 @@ There are some helper keys:
 
 | Key               | Description                              |
 | ----------------- | ---------------------------------------- |
-| Key up (**↑**)    | Move and scroll up                       |
-| Key down  (**↓**) | Move and scroll down                     |
+| Key up (**↑**)    | Scroll up                                |
+| Key down  (**↓**) | Scroll down                              |
+| Key left (**←**)  | Page up                                  |
+| Key right (**→**) | Page down                                |
 | Enter (↵)         | Open the selected awesome link on default browser |
 | Esc               | Close the awesome finder                 |
 
@@ -90,7 +92,7 @@ Details on [CHANGELOG](CHANGELOG.md)
 ## TODO
 
 * [ ] Query highlighting
-* [ ] Supports paging with Key left (←) and Key right (→)
+* [x] Supports paging with Key left (←) and Key right (→)
 * [ ] Smart parsing with hierachical structure
 * [ ] Supports all awesome series
 * [x] Supports initial query (example: `awesome python -q 'django oauth'`)

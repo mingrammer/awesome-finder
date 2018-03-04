@@ -66,6 +66,7 @@ class SearchScreen(object):
         self.top = 0
         self.bottom = self.max_lines
         self.current = 0
+        self.page = self.bottom // self.max_lines
 
         self.write_string(initial_query)
         self.run()
@@ -137,6 +138,10 @@ class SearchScreen(object):
                 self.scroll(self.UP)
             elif ch == curses.KEY_DOWN:
                 self.scroll(self.DOWN)
+            elif ch == curses.KEY_LEFT:
+                self.paging(self.UP)
+            elif ch == curses.KEY_RIGHT:
+                self.paging(self.DOWN)
             elif ch in (curses.ascii.LF, curses.ascii.NL):
                 self.open_link()
             elif ch == curses.ascii.ESC:
@@ -188,6 +193,29 @@ class SearchScreen(object):
             self.current = next_line
             return
 
+    def paging(self, direction):
+        """Paging the result window when pressing left/right arrow keys
+
+        Args:
+            direction: Up or Down
+
+        Returns:
+            None
+        """
+        current_page = (self.top + self.current) // self.max_lines
+        next_page = current_page + direction
+        if next_page == self.page:
+            self.current = min(self.current, self.bottom % self.max_lines - 1)
+
+        # Page up
+        if (direction == self.UP) and (current_page > 0):
+            self.top = max(0, self.top - self.max_lines)
+            return
+        # Page down
+        if (direction == self.DOWN) and (current_page < self.page):
+            self.top += self.max_lines
+            return
+
     def open_link(self):
         """Open the link of highlighted awesome content"""
         index = self.top + self.current
@@ -214,6 +242,7 @@ class SearchScreen(object):
 
         # Set the bottom to length of matched blocks
         self.bottom = len(matched_blocks)
+        self.page = self.bottom // self.max_lines
 
         # When reached bottom line, stop scrolling
         if self.current > self.bottom:
