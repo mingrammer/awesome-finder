@@ -18,8 +18,8 @@ class SearchScreen(object):
 
         Args
             awesome_title: Awesome topic title
-            awesome_blocks: A list of formatted awesome content.
-                It has a set of names and web links for crawled awesome content.
+            awesome_blocks: A list of formatted awesome content
+                It has a set of names and web links for crawled awesome content
             initial_query: An optional initial query given from shell
 
         Attributes
@@ -255,6 +255,7 @@ class SearchScreen(object):
         self.result_window.erase()
         for idx, val in enumerate(self.matched_blocks[self.top:self.top + self.max_lines]):
             if val['type'] == 'category':
+                # Highlight the current cursor line
                 if idx == self.current:
                     self.result_window.addstr(idx, 0, shorten(val['line'], self.width, placeholder='...'),
                                               curses.color_pair(2))
@@ -262,6 +263,7 @@ class SearchScreen(object):
                     self.result_window.addstr(idx, 0, shorten(val['line'], self.width, placeholder='...'),
                                               curses.color_pair(1))
             elif val['type'] == 'awesome':
+                # Highlight the current cursor line
                 if idx == self.current:
                     self.result_window.addstr(idx, 2, shorten(val['line'], self.width - 3, placeholder='...'),
                                               curses.color_pair(2))
