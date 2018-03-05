@@ -205,6 +205,8 @@ class SearchScreen(object):
         """
         current_page = (self.top + self.current) // self.max_lines
         next_page = current_page + direction
+        # The last page may have fewer items than max lines,
+        # so we should adjust the current cursor position as maximum item count on last page
         if next_page == self.page:
             self.current = min(self.current, self.bottom % self.max_lines - 1)
 
