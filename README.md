@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  Find and search the awesome things without browser
+  Search the awesome curated list without browser
 </p>
 
 <br><br><br>
@@ -48,7 +48,7 @@ awesome-hub <topic> -q (--query) 'query string you want to search'
 awesome-hub -h (--help)
 ```
 
-There are some helper keys:
+There are some helpful key bindings:
 
 | Key               | Description                              |
 | ----------------- | ---------------------------------------- |

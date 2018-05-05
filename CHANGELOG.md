@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.1) - 2018-04-24
+
+### Fixed
+
+- Use portable shebang line for python3
+
 ## [1.2.0](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.0) - 2018-03-04
 
 ### Added
