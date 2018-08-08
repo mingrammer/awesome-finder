@@ -68,6 +68,7 @@ setup(
     version=awesome.__version__,
     description=DESCRIPTION,
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author=awesome.__author__,
     author_email=EMAIL,
     url=URL,
