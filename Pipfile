@@ -7,6 +7,7 @@ name = "pypi"
 requests = "==2.18.4"
 
 [dev-packages]
+twine = "*"
 
 [requires]
 python_version = "3.6"
