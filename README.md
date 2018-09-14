@@ -34,7 +34,7 @@ pip install awesome-finder # or pip3 install awesome-finder
 
 ## Usage
 
-```bash
+```console
 # Find awesome things from awesome-<topic>
 awesome-hub <topic>
 
