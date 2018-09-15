@@ -70,7 +70,6 @@ class SearchScreen(object):
         self.page = self.bottom // self.max_lines
 
         self.write_string(initial_query)
-        self.run()
 
     def init_curses(self):
         """Setup the curses"""

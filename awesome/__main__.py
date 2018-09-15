@@ -46,7 +46,8 @@ def main():
     awesome_blocks = get_awesome_blocks(args.title, args.force)
     initial_query = args.query
 
-    SearchScreen(args.title, awesome_blocks, initial_query=initial_query)
+    screen = SearchScreen(args.title, awesome_blocks, initial_query=initial_query)
+    screen.run()
 
 
 if __name__ == '__main__':
