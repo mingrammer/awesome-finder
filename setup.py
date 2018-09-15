@@ -3,7 +3,7 @@ import os
 import sys
 from shutil import rmtree
 
-from setuptools import setup, find_packages, Command
+from setuptools import Command, find_packages, setup
 
 import awesome
 
@@ -55,7 +55,8 @@ class PublishCommand(Command):
             pass
 
         self.status('Building Source and Wheel (universal) distribution…')
-        os.system('{0} setup.py sdist bdist_wheel --universal'.format(sys.executable))
+        os.system(
+            '{0} setup.py sdist bdist_wheel --universal'.format(sys.executable))
 
         self.status('Uploading the package to PyPi via Twine…')
         os.system('twine upload dist/*')
