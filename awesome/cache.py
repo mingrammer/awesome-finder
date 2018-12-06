@@ -4,7 +4,7 @@ CACHE_DIRECTORY = os.path.join(os.path.expanduser('~'), '.awesome_cache')
 
 
 def exists(awesome_title):
-    """
+    """Check the awesome repository is cached
 
     Args:
         awesome_title: Awesome repository title
