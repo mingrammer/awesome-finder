@@ -83,13 +83,13 @@ class AbstractAwesomeParser(object):
 
         {separator between TOC and content}   <- Separator such as '----'
 
-        ## category                            <- Awesome content
-            * [title](link) - description      <-
-            * [title](link) - description      <-
-            * [title](link) - description      <-
+        ## category                           <- Awesome content
+            * [title](link) - description     <-
+            * [title](link) - description     <-
+            * [title](link) - description     <-
 
-        # others                               <- Useless parts
-            * ...                              <-
+        # others                              <- Useless parts
+            * ...                             <-
         ------------------------------------
 
         awesome_blocks = [
