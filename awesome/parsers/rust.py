@@ -7,7 +7,7 @@ class AwesomeRustParser(AbstractAwesomeParser):
 
     def find_content(self):
         readme = self.read_readme()
-        content = readme.split('- [License](#license)')[1]
+        content = readme.split('* [License](#license)')[1]
         lines = []
         for line in content.split('\n'):
             lines.append(line)
@@ -16,7 +16,7 @@ class AwesomeRustParser(AbstractAwesomeParser):
     def parse_awesome_content(self, content):
         awesome_blocks = []
         for line in content:
-            # Ignore last useless parts            
+            # Ignore last useless parts
             if line.startswith('## License'):
                 break
             # Parse the header title
