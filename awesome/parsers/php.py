@@ -7,7 +7,7 @@ class AwesomePHPParser(AbstractAwesomeParser):
 
     def find_content(self):
         readme = self.read_readme()
-        content = readme.split('- [Contributing](#contributing)')[1]
+        content = readme.split('- [PHP Internals Reading](#php-internals-reading)')[1]
         lines = []
         for line in content.split('\n'):
             lines.append(line)
