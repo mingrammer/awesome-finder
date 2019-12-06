@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.2](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.2) - 2019-12-07
+
+### Fixed
+
+- Fix split text for awesome-python, awesome-php , awesome-ios
+
 ## [1.2.1](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.1) - 2018-04-24
 
 ### Fixed
