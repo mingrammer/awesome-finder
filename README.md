@@ -26,7 +26,7 @@ With it, you can browse the awesome libraries, resources on your terminal withou
 
 ## Installation
 
-It supports **Python 3+** only now.
+It supports **Python 3+** only.
 
 ```bash
 pip install awesome-finder # or pip3 install awesome-finder 
