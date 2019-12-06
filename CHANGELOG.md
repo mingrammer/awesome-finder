@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.3](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.3) - 2019-12-07
+
+### Fixed
+
+- Update all dependencies
+
 ## [1.2.2](https://github.com/mingrammer/awesome-finder/releases/tag/v1.2.2) - 2019-12-07
 
 ### Fixed
