@@ -23,7 +23,7 @@ def get_awesome_blocks(awesome_title, force):
 
 def parse_command():
     parser = argparse.ArgumentParser(description='awesome command')
-    parser.add_argument('--version', action='version', version='awesome-finder version {version}, (c) 2017-2018 by {author}.'.format(version=__version__, author=__author__))
+    parser.add_argument('--version', action='version', version='awesome-finder version {version}, (c) 2017-2019 by {author}.'.format(version=__version__, author=__author__))
 
     subparsers = parser.add_subparsers(dest='title', title='title', description='the title of awesome you want to find')
     subparsers.required = True
