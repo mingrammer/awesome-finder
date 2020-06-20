@@ -15,6 +15,7 @@ from .parsers.shell import AwesomeShellParser
 from .parsers.swift import AwesomeSwiftParser
 from .parsers.vue import AwesomeVueParser
 from .parsers.nodejs import AwesomeNodejsParser
+from .parsers.cpp import AwesomeCppParser
 
 
 def load_parsers():
@@ -36,4 +37,5 @@ def load_parsers():
         'swift': AwesomeSwiftParser,
         'vue': AwesomeVueParser,
         'nodejs': AwesomeNodejsParser,
+        'cpp': AwesomeCppParser,
     }
