@@ -7,7 +7,7 @@ class AwesomeVueParser(AbstractAwesomeParser):
 
     def find_content(self):
         readme = self.read_readme()
-        content = readme.split('\n\n\n# Resources')[1]
+        content = readme.split('  - [Prerendering](#prerendering)')[1]
         lines = []
         for line in content.split('\n'):
             lines.append(line)
