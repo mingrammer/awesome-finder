@@ -3,7 +3,7 @@ from . import AbstractAwesomeParser
 
 class AwesomeParser(AbstractAwesomeParser):
     AWESOME_TITLE = 'awesome'
-    AWESOME_README_URL = 'https://raw.githubusercontent.com/sindresorhus/awesome/master/readme.md'
+    AWESOME_README_URL = 'https://raw.githubusercontent.com/sindresorhus/awesome/main/readme.md'
 
     def find_content(self):
         readme = self.read_readme()

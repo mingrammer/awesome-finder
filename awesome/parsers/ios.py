@@ -32,6 +32,6 @@ class AwesomeIosParser(AbstractAwesomeParser):
                     'link': link,
                 })
             # Ignore last useless parts
-            elif line.startswith('# Contributing and License'):
+            elif line.startswith('## Contributing and License'):
                 break
         return awesome_blocks

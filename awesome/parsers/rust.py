@@ -7,7 +7,7 @@ class AwesomeRustParser(AbstractAwesomeParser):
 
     def find_content(self):
         readme = self.read_readme()
-        content = readme.split('* [License](#license)')[1]
+        content = readme.split('  - [License](#license)')[1]
         lines = []
         for line in content.split('\n'):
             lines.append(line)
